@@ -114,10 +114,11 @@ if ( $nv_Request->get_int( 'save', 'post' ) == 1 )
     {
         $error['no_ngsinh'] = $lang_module['no_ngsinh'];
     }
-    else
+    elseif(strlen($thongtin['ngsinh']) != 10 )
     {
         $error['format_ngsinh'] = $lang_module['format_ngsinh'];
     }
+	
 
     
 	
@@ -232,10 +233,6 @@ foreach($chucvu as $list_cv)
     $xtpl->parse( 'main.cv3' );
 }
 
-if( $thongtin['ngsinh'] )
-{
-	$thongtin['ngsinh'] = nv_date( 'd/m/Y', $thongtin['ngsinh'] );	
-}
 
 if( defined( 'NV_EDITOR' ) and nv_function_exists( 'nv_aleditor' ) )
 	{

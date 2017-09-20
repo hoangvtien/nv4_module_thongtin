@@ -37,7 +37,7 @@ $numf  = $result1->rowCount();
 $all_page = ( $numf ) ? $numf : 0;
 if($all_page == 0)
 {
-    Header("Location:" . NV_BASE_ADMINURL . "index.php?" . NV_NAME_VARIABLE . "=" . $module_name . "&" . NV_OP_VARIABLE . "=cbdoan_add");
+    Header("Location:" . NV_BASE_ADMINURL . "index.php?" . NV_NAME_VARIABLE . "=" . $module_name . "&" . NV_OP_VARIABLE . "=thongtin_add");
 }
 
 

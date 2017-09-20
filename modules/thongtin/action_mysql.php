@@ -36,7 +36,7 @@ $sql_create_module[] = "CREATE TABLE " . $db_config['prefix'] . "_" . $lang . "_
   skype varchar(50),
   phone varchar(12),
   website varchar(50),
-  tomtat varchar(255),
+  tomtat text,
   noilamviec varchar(255) NOT NULL, 
   PRIMARY KEY (id)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8";
